@@ -68,6 +68,7 @@ app.use(cookieParser());
 
 //route settings
 app.use(`/api/auth/`, require(`./routes/userRoute`));
+app.use(`/api/`, require(`./routes/customerRoute`));
 
 app.listen(PORT, () => {
     console.log(`server running on @ http://localhost:` + PORT);
